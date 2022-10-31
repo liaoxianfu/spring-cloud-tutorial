@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-cloud-eureka-client
+
+server:
+  port: 4001
+
+eureka:
+  client:
+    service-url:
+      # defaultZone 必须使用驼峰命名法，不能支持匈牙利命名 无法正常转换
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
