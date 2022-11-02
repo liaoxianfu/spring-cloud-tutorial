@@ -6,6 +6,8 @@
     <modules>
         <module>spring-cloud-eureka-service</module>
         <module>spring-cloud-eureka-client</module>
+        <module>spring-cloud-ribbon</module>
+        <module>spring-cloud-sentinel</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -34,6 +36,13 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>2021.0.4</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2021.0.4.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

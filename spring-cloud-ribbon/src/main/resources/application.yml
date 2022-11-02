@@ -1,14 +1,9 @@
 spring:
   application:
-    name: spring-cloud-eureka-client
-  cloud:
-    sentinel:
-      transport:
-        port: 8719
-        dashboard: 127.0.0.1:8080
+    name: spring-cloud-ribbon
 
 server:
-  port: 4001
+  port: 5001
 
 eureka:
   client:
